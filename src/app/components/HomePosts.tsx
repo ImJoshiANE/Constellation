@@ -8,7 +8,7 @@ import { LuArrowBigDown, LuArrowBigUp } from "react-icons/lu";
 import { PiArrowFatUpFill } from "react-icons/pi";
 export default function HomePosts() {
   return (
-    <div className="scrollbar scrollbar-none  scrollbar-w-0 scrollbar-h-0 ">
+    <div className=" no-scrollbar">
       <div className="grid  grid-cols-12  mb-12  ">
         <div className="col-span-8 col-start-2  flex gap-2">
           <Image
