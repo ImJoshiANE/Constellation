@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BsTwitterX, BsPersonBoundingBox } from "react-icons/bs";
-import { FaPeopleGroup } from "react-icons/fa6";
+import { FaPeopleGroup, FaRegBookmark } from "react-icons/fa6";
 import { LuShoppingBasket } from "react-icons/lu";
 
 export default function LeftBar() {
@@ -24,6 +24,10 @@ export default function LeftBar() {
         <div className="flex text-[#818181] font-semibold text-lg  my-5">
           <FaPeopleGroup className="text-[#818181] text-2xl" />
           <h2 className="ml-3">Community</h2>
+        </div>
+        <div className="flex text-[#818181] font-semibold text-lg  my-5">
+          <FaRegBookmark className="text-[#818181] text-2xl" />
+          <h2 className="ml-3">Saved</h2>
         </div>
       </div>
     </div>

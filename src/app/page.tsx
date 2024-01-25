@@ -1,6 +1,6 @@
 import React from "react";
 import HomePosts from "./components/HomePosts";
-
+import PostBox from "./components/PostBox";
 export default function HomePage() {
   return (
     <>
@@ -19,6 +19,7 @@ export default function HomePage() {
             alignItems: "center",
           }}
         />
+        <PostBox />
         <HomePosts />
       </div>
     </>
