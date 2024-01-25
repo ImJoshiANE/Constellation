@@ -1,5 +1,5 @@
 import React from "react";
-import { IoSearch } from "react-icons/io5";
+import HomePosts from "./components/HomePosts";
 
 export default function HomePage() {
   return (
@@ -19,6 +19,7 @@ export default function HomePage() {
             alignItems: "center",
           }}
         />
+        <HomePosts />
       </div>
     </>
   );
