@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import LeftBar from "./components/LeftBar";
 import RightBar from "./components/RightBar";
-import SessionProvider from "./provider/SessionProvider";
+
+// Fonts
 import { Montserrat } from "next/font/google";
-import { getServerSession } from "next-auth";
+import { Navbar } from "@/components/component/navbar";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,12 +22,12 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
+        <Navbar/>
         <div className="grid grid-cols-12  bg-[#0E0C17] h-screen w-screen ">
-          <SessionProvider session={session}>
-            <LeftBar />
-            {children}
-            <RightBar />
-          </SessionProvider>
+          <LeftBar />
+          {children}
+          <RightBar />
+ 
         </div>
       </body>
     </html>
