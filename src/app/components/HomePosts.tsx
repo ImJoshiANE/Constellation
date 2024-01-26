@@ -65,7 +65,7 @@ export default function HomePosts() {
           </div>
         </div>
       </div>
-      <div className="grid  grid-cols-12  mb-12 text-white ">
+      <div className="grid  grid-cols-12  mb-12 text-white  ">
         <div className="col-span-8 col-start-2  flex gap-2">
           <Image
             src="https://avatars.githubusercontent.com/u/53569547?v=4"
@@ -155,8 +155,7 @@ export default function HomePosts() {
             <span className="ml-2">save</span>
           </div>
         </div>
-      </div>{" "}
-      */
+      </div>
     </ScrollArea>
   );
 }
