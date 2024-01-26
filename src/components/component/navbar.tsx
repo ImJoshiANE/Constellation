@@ -52,7 +52,7 @@ export function Navbar() {
   );
 }
 
-function FlagIcon(props) {
+function FlagIcon({ props }: { props: any }) {
   return (
     <svg
       {...props}
@@ -72,7 +72,7 @@ function FlagIcon(props) {
   );
 }
 
-function PhoneIcon(props) {
+function PhoneIcon({ props }: { props: any }) {
   return (
     <svg
       {...props}
@@ -91,7 +91,7 @@ function PhoneIcon(props) {
   );
 }
 
-function TextIcon(props) {
+function TextIcon({ props }: { props: any }) {
   return (
     <svg
       {...props}

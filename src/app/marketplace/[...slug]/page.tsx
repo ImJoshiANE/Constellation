@@ -7,8 +7,8 @@ function page() {
   };
 
   return (
-    <ScrollArea className="text-white col-span-8 flex">
-      <div className=" mt-16 mx-2 " >
+    <ScrollArea className="text-white col-span-7 flex">
+      <div className=" mt-16 mx-2 ">
         <nav className="border-b py-4">
           <ol className="flex space-x-2 text-sm px-4">
             <li>
