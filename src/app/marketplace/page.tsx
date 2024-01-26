@@ -17,6 +17,7 @@ const Page: FC<PageProps> = ({}) => {
         </div>
         <ToPurchase className="mx-10" />
         <ToRent className="mx-10" />
+  
     </ScrollArea>
   );
 };

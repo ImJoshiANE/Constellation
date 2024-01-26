@@ -6,10 +6,16 @@ import { MdOutlineShare } from "react-icons/md";
 import { FaRegBookmark } from "react-icons/fa6";
 import { LuArrowBigDown, LuArrowBigUp } from "react-icons/lu";
 import { PiArrowFatUpFill } from "react-icons/pi";
+import { ScrollArea } from "../components/ui/scroll-area";
+
 export default function HomePosts() {
+  const scrollAreaHeight = `calc(100vh - 18rem)`;
   return (
-    <div className="scrollbar scrollbar-none  scrollbar-w-0 scrollbar-h-0 ">
-      <div className="grid  grid-cols-12  mb-12  ">
+    <ScrollArea
+      className=" rounded-md  w-full"
+      style={{ height: scrollAreaHeight }}
+    >
+      <div className="grid  grid-cols-12  mb-12 text-white   ">
         <div className="col-span-8 col-start-2  flex gap-2">
           <Image
             src="https://avatars.githubusercontent.com/u/53569547?v=4"
@@ -38,7 +44,6 @@ export default function HomePosts() {
         <div className="col-span-1  flex flex-col items-center justify-center">
           <PiArrowFatUpFill className="text-2xl text-[#593F9D]" />
 
-          {/* <LuArrowBigUp className="text-2xl" /> */}
           <span className="font-semibold text-slate-400"> 300</span>
           <LuArrowBigDown className="text-2xl" />
         </div>
@@ -57,7 +62,7 @@ export default function HomePosts() {
           </div>
         </div>
       </div>
-      <div className="grid  grid-cols-12  mb-12 ">
+      <div className="grid  grid-cols-12  mb-12 text-white  ">
         <div className="col-span-8 col-start-2  flex gap-2">
           <Image
             src="https://avatars.githubusercontent.com/u/53569547?v=4"
@@ -86,7 +91,6 @@ export default function HomePosts() {
         <div className="col-spam-1  flex flex-col items-center justify-center">
           <PiArrowFatUpFill className="text-2xl text-[#593F9D]" />
 
-          {/* <LuArrowBigUp className="text-2xl" /> */}
           <span className="font-semibold text-slate-400"> 300</span>
           <LuArrowBigDown className="text-2xl" />
         </div>
@@ -105,7 +109,7 @@ export default function HomePosts() {
           </div>
         </div>
       </div>
-      <div className="grid  grid-cols-12  mb-12  ">
+      <div className="grid  grid-cols-12  mb-12  text-white ">
         <div className="col-span-8 col-start-2  flex gap-2">
           <Image
             src="https://avatars.githubusercontent.com/u/53569547?v=4"
@@ -127,19 +131,10 @@ export default function HomePosts() {
             KCDSBDC,BVASLASDKBHBASDK,HVDCSBVBDMD;SADBHSAN DSLMNNBSX{" "}
           </h1>
         </div>
-        {/* <div className="col-span-7 col-start-2 mt-3">
-          <Image
-            src="https://pbs.twimg.com/media/FzToeteWAAEeBBr?format=jpg&name=4096x4096"
-            alt=""
-            height={100}
-            width={100}
-            className="w-fit h-fit rounded-lg"
-          />
-        </div> */}
+
         <div className="col-spam-1  flex flex-col items-center justify-center">
           <PiArrowFatUpFill className="text-2xl text-[#593F9D]" />
 
-          {/* <LuArrowBigUp className="text-2xl" /> */}
           <span className="font-semibold text-slate-400"> 300</span>
           <LuArrowBigDown className="text-2xl" />
         </div>
@@ -158,6 +153,12 @@ export default function HomePosts() {
           </div>
         </div>
       </div>
-    </div>
+    </ScrollArea>
   );
 }
+
+{
+}
+// </ScrollArea>
+//   );
+// }

@@ -5,8 +5,8 @@ import { IoCameraSharp } from "react-icons/io5";
 
 export default function PostBox() {
   return (
-    <div className="grid grid-cols-12  mb-10 ">
-      <div className="col-span-8 col-start-2 border border-x-0 border-t-0 border-b-1 border-slate-600  ">
+    <div className="grid grid-cols-12  mb-10 w-100 ">
+      <div className="col-span-8 col-start-2 border border-x-0 border-t-0 border-b-1 border-slate-600  text-white ">
         <textarea
           placeholder="New Post"
           className="bg-transparent  w-full h-32 mb-0 pb-0"
@@ -18,7 +18,7 @@ export default function PostBox() {
           <FaFileImage />
           <IoCameraSharp />
         </div>
-        <div className="text-xl">
+        <div className="text-xl text-white">
           <IoMdSend />
         </div>
       </div>
