@@ -6,7 +6,7 @@ import { LuShoppingBasket } from "react-icons/lu";
 
 export default function LeftBar() {
   return (
-    <div className="col-span-2 bg-[#191919]">
+    <div className="pt-12 col-span-2 bg-[#191919] border-solid border-r-2 border-[#2A2931] ">
       <div className=" mt-10 ml-4">
         <div className="flex text-[#818181] font-semibold text-lg   my-5 ">
           <AiFillHome className="text-[#818181] text-2xl" />
