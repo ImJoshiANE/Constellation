@@ -7,9 +7,6 @@ import { FaRegBookmark } from "react-icons/fa6";
 import { LuArrowBigDown, LuArrowBigUp } from "react-icons/lu";
 import { PiArrowFatUpFill } from "react-icons/pi";
 import { ScrollArea } from "../components/ui/scroll-area";
-const tags = Array.from({ length: 50 }).map(
-  (_, i, a) => `v1.2.0-beta.${a.length - i}`
-);
 
 export default function HomePosts() {
   const scrollAreaHeight = `calc(100vh - 18rem)`;
@@ -18,7 +15,7 @@ export default function HomePosts() {
       className=" rounded-md  w-full"
       style={{ height: scrollAreaHeight }}
     >
-      <div className="grid  grid-cols-12  mb-12 text-white  ">
+      <div className="grid  grid-cols-12  mb-12 text-white   ">
         <div className="col-span-8 col-start-2  flex gap-2">
           <Image
             src="https://avatars.githubusercontent.com/u/53569547?v=4"
