@@ -3,7 +3,10 @@ import "./globals.css";
 import LeftBar from "./components/LeftBar";
 import RightBar from "./components/RightBar";
 
-// Fonts 
+// Material UI
+// import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+
+// Fonts
 import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -21,10 +24,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <div className="grid grid-cols-12  bg-[#0E0C17] h-screen w-screen ">
-          <LeftBar />
-
-          {children}
-          <RightBar />
+          {/* <AppRouterCacheProvider> */}
+            <LeftBar />
+            {children}
+            <RightBar />
+          {/* </AppRouterCacheProvider> */}
         </div>
       </body>
     </html>

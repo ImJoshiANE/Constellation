@@ -1,9 +1,9 @@
 import { FC } from "react";
 import ProductCard from "./ProductCard";
 
-interface ToPurchaseProps extends React.HTMLAttributes<HTMLDivElement> {}
+interface ToRentProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-const ToPurchase: FC<ToPurchaseProps> = ({}) => {
+const ToRent: FC<ToRentProps> = ({}) => {
   // const [products, setProducts] = useState();
 
   const products = [
@@ -35,7 +35,7 @@ const ToPurchase: FC<ToPurchaseProps> = ({}) => {
 
   return (
     <div className=" mt-10  bg-[#100c21] rounded-xl">
-      <h3 className=" capitalize text-xl font-bold p-5 pb-2 ">for purchase from students</h3>
+      <h3 className=" capitalize text-xl font-bold p-5 pb-2 ">for rent from students</h3>
       <div className=" flex items-center justify-center flex-wrap ">
         <ProductCard className=" mr-5 my-5 " />
         <ProductCard className=" mx-5 my-5 " />
@@ -45,4 +45,4 @@ const ToPurchase: FC<ToPurchaseProps> = ({}) => {
   );
 };
 
-export default ToPurchase;
+export default ToRent;
