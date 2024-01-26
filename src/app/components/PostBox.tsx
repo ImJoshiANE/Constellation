@@ -18,7 +18,7 @@ export default function PostBox() {
           <FaFileImage />
           <IoCameraSharp />
         </div>
-        <div className="text-xl">
+        <div className="text-xl text-white">
           <IoMdSend />
         </div>
       </div>
