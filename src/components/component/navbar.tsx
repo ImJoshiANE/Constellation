@@ -1,6 +1,14 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { AvatarImage, Avatar } from "@/components/ui/avatar";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export function Navbar() {
   return (
@@ -14,16 +22,28 @@ export function Navbar() {
         </div>
       </div>
       <Input
-          className="w-[50vw] rounded-md bg-[#2A2931] border-[#2A2931] text-white placeholder-gray-300 my-1"
-          placeholder="Search"
-        />
+        className="w-[50vw] rounded-md bg-[#2A2931] border-[#2A2931] text-white placeholder-gray-300 my-1"
+        placeholder="Search"
+      />
       <div className="flex items-center space-x-3">
         <Button className="bg-[#2A2931] text-white rounded-full p-2">
           <PhoneIcon className="h-6 w-6" />
         </Button>
-        <Button className="bg-[#2A2931] text-white rounded-full p-2">
-          <TextIcon className="h-6 w-6" />
-        </Button>
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <Button className="bg-[#2A2931] text-white rounded-full p-2">
+              <TextIcon className="h-6 w-6" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <DropdownMenuLabel>Notifications</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>You have an order.</DropdownMenuItem>
+            <DropdownMenuItem>New Post on ML Community.</DropdownMenuItem>
+            <DropdownMenuItem>You have 90 Upvotes.</DropdownMenuItem>
+            <DropdownMenuItem>Allumni Event.</DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
         <Avatar>
           <AvatarImage alt="User avatar" src="/ProfileImages/profile.jpg" />
         </Avatar>

@@ -1,184 +1,185 @@
-import { ScrollArea } from "../../components/ui/scroll-area"
-import prodImg from "../../../../public/ProductImages/BiCycle.jpg"
+import { ScrollArea } from "../../components/ui/scroll-area";
+import prodImg from "../../../../public/ProductImages/BiCycle.jpg";
 
 function page() {
-
   const product = {
-    images:[prodImg, prodImg, prodImg, prodImg]
-  }
+    images: [prodImg, prodImg, prodImg, prodImg],
+  };
 
   return (
     <ScrollArea className="text-white col-span-8 flex">
-      <nav className="border-b py-4">
-        <ol className="flex space-x-2 text-sm px-4">
-          <li>
-            <a className="text-gray-600 hover:text-gray-900" href="#">
-              Home
+      <div className=" mt-16 mx-2 " >
+        <nav className="border-b py-4">
+          <ol className="flex space-x-2 text-sm px-4">
+            <li>
+              <a className="text-gray-600 hover:text-gray-900" href="#">
+                Home
+              </a>
+            </li>
+            <li>/</li>
+            <li>
+              <a className="text-gray-600 hover:text-gray-900" href="#">
+                Marketplace
+              </a>
+            </li>
+            <li>/</li>
+            <li className="text-gray-500">Bicycle</li>
+          </ol>
+        </nav>
+        <div className="flex flex-col lg:flex-row">
+          <div className="flex flex-col items-center lg:items-start lg:flex-row lg:space-x-10 p-4">
+            <div className="flex flex-col space-y-4">
+              <img
+                alt="Product Image"
+                className="w-24 h-32"
+                height="400"
+                src="/ProductImages/BiCycle.jpg"
+                style={{
+                  aspectRatio: "300/400",
+                  objectFit: "cover",
+                }}
+                width="300"
+              />
+              <img
+                alt="Product Image"
+                className="w-24 h-32"
+                height="400"
+                src="/ProductImages/BiCycle.jpg"
+                style={{
+                  aspectRatio: "300/400",
+                  objectFit: "cover",
+                }}
+                width="300"
+              />
+              <img
+                alt="Product Image"
+                className="w-24 h-32"
+                height="400"
+                src="/ProductImages/BiCycle.jpg"
+                style={{
+                  aspectRatio: "300/400",
+                  objectFit: "cover",
+                }}
+                width="300"
+              />
+              <img
+                alt="Product Image"
+                className="w-24 h-32"
+                height="400"
+                src="/ProductImages/BiCycle.jpg"
+                style={{
+                  aspectRatio: "300/400",
+                  objectFit: "cover",
+                }}
+                width="300"
+              />
+            </div>
+            <img
+              alt="Product Image"
+              className="lg:w-[300px] lg:h-[400px]"
+              height="400"
+              src="/ProductImages/BiCycle.jpg"
+              style={{
+                aspectRatio: "300/400",
+                objectFit: "cover",
+              }}
+              width="300"
+            />
+          </div>
+          <div className="flex-1 p-4">
+            <h1 className="text-2xl font-semibold">
+              Jenny’s Closets – The winter top for female, green
+            </h1>
+            <div className="flex items-center space-x-2 my-4">
+              <div className="flex text-yellow-400">
+                <StarIcon className="w-5 h-5" />
+                <StarIcon className="w-5 h-5" />
+                <StarIcon className="w-5 h-5" />
+                <StarIcon className="w-5 h-5" />
+                <StarIcon className="w-5 h-5" />
+              </div>
+              <span className="text-sm text-gray-600">157 Reviews</span>
+            </div>
+            <div className="flex items-baseline space-x-2">
+              <span className="text-4xl font-bold">$49</span>
+              <span className="text-lg text-gray-500 line-through">$99</span>
+              <span className="text-sm text-green-600">Save 50% right now</span>
+            </div>
+            <div className="my-4">
+              <h3 className="font-semibold">Features</h3>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Made with full cotton</li>
+                <li>Slim fit for any body</li>
+                <li>Quality control by JC</li>
+              </ul>
+            </div>
+            <div className="my-4">
+              <h3 className="font-semibold">Colors</h3>
+              <div className="flex space-x-2">
+                <span className="block w-6 h-6 bg-blue-600 rounded-full" />
+                <span className="block w-6 h-6 bg-gray-800 rounded-full" />
+              </div>
+            </div>
+            <div className="flex space-x-4 my-4">
+              <button className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                Add to cart
+              </button>
+              <button className="p-2 text-gray-500 hover:text-gray-700">
+                <HeartIcon className="w-6 h-6" />
+              </button>
+            </div>
+            <div className="flex flex-col space-y-2 text-sm text-gray-600">
+              <div className="flex items-center">
+                <TruckIcon className="w-4 h-4 mr-2" />
+                Free shipping worldwide
+              </div>
+              <div className="flex items-center">
+                <ShieldCheckIcon className="w-4 h-4 mr-2" />
+                100% Secured Payment
+              </div>
+              <div className="flex items-center">
+                <UserCheckIcon className="w-4 h-4 mr-2" />
+                Made by the Professionals
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="border-t p-4">
+          <div className="flex justify-between">
+            <div className="flex space-x-4">
+              <a
+                className="text-blue-600 border-b-2 border-blue-600 pb-1"
+                href="#"
+              >
+                Seller Reviews
+              </a>
+            </div>
+            <a className="text-sm text-gray-600 hover:text-gray-900" href="#">
+              157 Reviews
             </a>
-          </li>
-          <li>/</li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-900" href="#">
-              Marketplace
-            </a>
-          </li>
-          <li>/</li>
-          <li className="text-gray-500">Bicycle</li>
-        </ol>
-      </nav>
-      <div className="flex flex-col lg:flex-row">
-        <div className="flex flex-col items-center lg:items-start lg:flex-row lg:space-x-10 p-4">
-          <div className="flex flex-col space-y-4">
-            <img
-              alt="Product Image"
-              className="w-24 h-32"
-              height="400"
-              src="/ProductImages/BiCycle.jpg"
-              style={{
-                aspectRatio: "300/400",
-                objectFit: "cover",
-              }}
-              width="300"
-            />
-            <img
-              alt="Product Image"
-              className="w-24 h-32"
-              height="400"
-              src="/ProductImages/BiCycle.jpg"
-              style={{
-                aspectRatio: "300/400",
-                objectFit: "cover",
-              }}
-              width="300"
-            />
-            <img
-              alt="Product Image"
-              className="w-24 h-32"
-              height="400"
-              src="/ProductImages/BiCycle.jpg"
-              style={{
-                aspectRatio: "300/400",
-                objectFit: "cover",
-              }}
-              width="300"
-            />
-            <img
-              alt="Product Image"
-              className="w-24 h-32"
-              height="400"
-              src="/ProductImages/BiCycle.jpg"
-              style={{
-                aspectRatio: "300/400",
-                objectFit: "cover",
-              }}
-              width="300"
-            />
           </div>
-          <img
-            alt="Product Image"
-            className="lg:w-[300px] lg:h-[400px]"
-            height="400"
-            src="/ProductImages/BiCycle.jpg"
-            style={{
-              aspectRatio: "300/400",
-              objectFit: "cover",
-            }}
-            width="300"
-          />
-        </div>
-        <div className="flex-1 p-4">
-          <h1 className="text-2xl font-semibold">
-            Jenny’s Closets – The winter top for female, green
-          </h1>
-          <div className="flex items-center space-x-2 my-4">
-            <div className="flex text-yellow-400">
-              <StarIcon className="w-5 h-5" />
-              <StarIcon className="w-5 h-5" />
-              <StarIcon className="w-5 h-5" />
-              <StarIcon className="w-5 h-5" />
-              <StarIcon className="w-5 h-5" />
-            </div>
-            <span className="text-sm text-gray-600">157 Reviews</span>
-          </div>
-          <div className="flex items-baseline space-x-2">
-            <span className="text-4xl font-bold">$49</span>
-            <span className="text-lg text-gray-500 line-through">$99</span>
-            <span className="text-sm text-green-600">Save 50% right now</span>
-          </div>
-          <div className="my-4">
-            <h3 className="font-semibold">Features</h3>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>Made with full cotton</li>
-              <li>Slim fit for any body</li>
-              <li>Quality control by JC</li>
-            </ul>
-          </div>
-          <div className="my-4">
-            <h3 className="font-semibold">Colors</h3>
-            <div className="flex space-x-2">
-              <span className="block w-6 h-6 bg-blue-600 rounded-full" />
-              <span className="block w-6 h-6 bg-gray-800 rounded-full" />
-            </div>
-          </div>
-          <div className="flex space-x-4 my-4">
-            <button className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
-              Add to cart
-            </button>
-            <button className="p-2 text-gray-500 hover:text-gray-700">
-              <HeartIcon className="w-6 h-6" />
-            </button>
-          </div>
-          <div className="flex flex-col space-y-2 text-sm text-gray-600">
+          <div className="space-y-4 my-4">
             <div className="flex items-center">
-              <TruckIcon className="w-4 h-4 mr-2" />
-              Free shipping worldwide
+              <div className="flex text-yellow-400">
+                <StarIcon className="w-4 h-4" />
+                <StarIcon className="w-4 h-4" />
+                <StarIcon className="w-4 h-4" />
+                <StarIcon className="w-4 h-4" />
+                <StarIcon className="w-4 h-4" />
+              </div>
+              <p className="text-sm text-gray-600 ml-2">
+                You made it so simple. My new site is so much faster and easier
+                to work with than my old site. I just choose the page, make the
+                changes.
+              </p>
             </div>
-            <div className="flex items-center">
-              <ShieldCheckIcon className="w-4 h-4 mr-2" />
-              100% Secured Payment
-            </div>
-            <div className="flex items-center">
-              <UserCheckIcon className="w-4 h-4 mr-2" />
-              Made by the Professionals
-            </div>
+            <div className="text-xs text-gray-500">Kristin Watson</div>
+            <div className="text-xs text-gray-500">March 14, 2021</div>
           </div>
+          <button className="text-sm text-gray-600 hover:text-gray-900">
+            LOAD MORE REVIEWS
+          </button>
         </div>
-      </div>
-      <div className="border-t p-4">
-        <div className="flex justify-between">
-          <div className="flex space-x-4">
-            <a
-              className="text-blue-600 border-b-2 border-blue-600 pb-1"
-              href="#"
-            >
-              Seller Reviews
-            </a>
-          </div>
-          <a className="text-sm text-gray-600 hover:text-gray-900" href="#">
-            157 Reviews
-          </a>
-        </div>
-        <div className="space-y-4 my-4">
-          <div className="flex items-center">
-            <div className="flex text-yellow-400">
-              <StarIcon className="w-4 h-4" />
-              <StarIcon className="w-4 h-4" />
-              <StarIcon className="w-4 h-4" />
-              <StarIcon className="w-4 h-4" />
-              <StarIcon className="w-4 h-4" />
-            </div>
-            <p className="text-sm text-gray-600 ml-2">
-              You made it so simple. My new site is so much faster and easier to
-              work with than my old site. I just choose the page, make the
-              changes.
-            </p>
-          </div>
-          <div className="text-xs text-gray-500">Kristin Watson</div>
-          <div className="text-xs text-gray-500">March 14, 2021</div>
-        </div>
-        <button className="text-sm text-gray-600 hover:text-gray-900">
-          LOAD MORE REVIEWS
-        </button>
       </div>
     </ScrollArea>
   );
