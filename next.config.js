@@ -9,6 +9,18 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "qph.cf2.quoracdn.net",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };
