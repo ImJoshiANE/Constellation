@@ -34,7 +34,7 @@ const ToPurchase: FC<ToPurchaseProps> = ({}) => {
   ];
 
   return (
-    <div className=" mt-10  bg-[#100c21] rounded-xl">
+    <div className=" mt-10  bg-[#1C1A24] rounded-xl">
       <h3 className=" capitalize text-xl font-bold p-5 pb-2 ">for purchase from students</h3>
       <div className=" flex items-center justify-center flex-wrap ">
         <ProductCard className=" mr-5 my-5 " />
